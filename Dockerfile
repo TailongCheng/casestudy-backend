@@ -8,7 +8,7 @@ WORKDIR /flaskapp
 COPY flaskapp.py .
  
 # Run command to ensure the Flask framework is present in the container.
-RUN pip install Flask
+RUN pip install Flask flask_cors
  
 # Expose port 8080 for the application
 EXPOSE 5000
